@@ -18,6 +18,12 @@ public class PersonTest {
 
 		testClass.setlName("lName1");
 		assertEquals("lName1", testClass.getlName());
+
+		testClass.setCompanyName("Google");
+		assertEquals("Google", testClass.getCompanyName());
+
+		testClass.setPersonId(110);
+		assertEquals(110, testClass.getPersonId());
 	}
 
 }
