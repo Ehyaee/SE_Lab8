@@ -109,12 +109,13 @@ public class MockUserServiceImplTest {
 	public void setup() {
 		person.setfName(ALI);
 		user.setFirstName(ALI);
+
 		person2.setfName("Mohammad");
 		person2.setlName("Jaberi");
 		person2.setPersonId(3);
+
 		user2.setFirstName("Mohammad");
 		user2.setLastName("Jaberi");
-		user2.setUserId(2);
 		user2.setUserId(3);
 	}
 
@@ -131,4 +132,21 @@ public class MockUserServiceImplTest {
 		assertEquals(user2, other);
 		assertNotEquals(user2, user);
 	}
+
+	@Test
+	public void UserNotFoundException() {
+		doReturn(null).when(personDao).findOne( Matchers.any(Integer.class));
+		doReturn(user2).when(transformer).toUserDomain(Matchers.any(Person.class));
+		try {
+			User default_user = testClass.findById_old(Integer.valueOf(3));
+		} catch (RuntimeException expected) {
+			assertTrue(expected instanceof UserNotFoundException);
+			assertEquals(((UserNotFoundException) expected).getUserId(),Integer.valueOf(3));
+
+		}
+
+
+	}
+
+
 }
