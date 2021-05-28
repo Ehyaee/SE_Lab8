@@ -111,18 +111,24 @@ public class MockUserServiceImplTest {
 		user.setFirstName(ALI);
 		person2.setfName("Mohammad");
 		person2.setlName("Jaberi");
+		person2.setPersonId(3);
 		user2.setFirstName("Mohammad");
 		user2.setLastName("Jaberi");
 		user2.setUserId(2);
+		user2.setUserId(3);
 	}
 
 
 	@Test
 	public void save_user() {
 		testClass.save(user2);
-
 		verify(personDao, times(1)).save(transformer.toUserEntity(user2));
 	}
 
-	
+	@Test
+	public void transformtoUserDomain(){
+		User other= new TransformService().toUserDomain(person2);
+		assertEquals(user2, other);
+		assertNotEquals(user2, user);
+	}
 }
