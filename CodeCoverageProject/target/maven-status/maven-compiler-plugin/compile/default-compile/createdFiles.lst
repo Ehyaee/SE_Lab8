@@ -1,0 +1,8 @@
+usermanagement\repository\PersonRepository.class
+usermanagement\service\User.class
+usermanagement\service\UserService.class
+usermanagement\entity\Person.class
+usermanagement\service\TransformService.class
+usermanagement\exception\UserNotFoundException.class
+usermanagement\Application.class
+usermanagement\service\UserServiceImpl.class

@@ -39,6 +39,9 @@ public class MockUserServiceImplTest {
 
 	private User user = new User();
 
+	private User user2 = new User();
+	private Person person2 = new Person();
+
 	@Test
 	public void findById_found() {
 		doReturn(person).when(personDao).findOne(Integer.valueOf(1));
@@ -58,6 +61,7 @@ public class MockUserServiceImplTest {
 		assertNotNull(default_user);
 		 
 	}
+
 
 	@Test
 	public void searchByCompanyName_found() {
@@ -105,5 +109,20 @@ public class MockUserServiceImplTest {
 	public void setup() {
 		person.setfName(ALI);
 		user.setFirstName(ALI);
+		person2.setfName("Mohammad");
+		person2.setlName("Jaberi");
+		user2.setFirstName("Mohammad");
+		user2.setLastName("Jaberi");
+		user2.setUserId(2);
 	}
+
+
+	@Test
+	public void save_user() {
+		testClass.save(user2);
+
+		verify(personDao, times(1)).save(transformer.toUserEntity(user2));
+	}
+
+	
 }

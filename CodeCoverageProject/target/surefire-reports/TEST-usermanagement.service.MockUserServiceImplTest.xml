@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="usermanagement.service.MockUserServiceImplTest" time="0.025" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="idea.version" value="2020.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\bin"/>
+    <property name="java.vm.version" value="25.40-b25"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\narges\Spring1400\az\8\SE_Lab8\CodeCoverageProject"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\narges\Spring1400\az\8\SE_Lab8\CodeCoverageProject"/>
+    <property name="java.runtime.version" value="1.8.0_41-b04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\narges\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="maven.ext.class.path" value="E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\Program Files\Git\cmd;E:\Program Files\PuTTY\;E:\narges\application\maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;E:\texlive\2021\bin\win32;C:\Users\narges\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\narges\AppData\Local\Programs\Python\Python38\;C:\Users\narges\AppData\Local\Microsoft\WindowsApps;E:\Program Files\JetBrains\PyCharm Community Edition 2020.1.4\bin;;;."/>
+    <property name="maven.conf" value="E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\narges"/>
+    <property name="user.timezone" value="Asia/Tehran"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="narges"/>
+    <property name="java.class.path" value="E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license;E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2 install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_41"/>
+    <property name="java.ext.dirs" value="E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\resources.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\rt.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\sunrsasign.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\jsse.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\jce.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\charsets.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\lib\jfr.jar;E:\narges\application\JDK8\openjdk-8u41-b04-windows-i586-14_jan_2020\java-se-8u41-ri\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase name="searchByCompanyName_not_found" classname="usermanagement.service.MockUserServiceImplTest" time="0.012"/>
+  <testcase name="findById_not_found_default_user" classname="usermanagement.service.MockUserServiceImplTest" time="0.005"/>
+  <testcase name="same_person" classname="usermanagement.service.MockUserServiceImplTest" time="0"/>
+  <testcase name="deleteById_is_done_by_dao_delete" classname="usermanagement.service.MockUserServiceImplTest" time="0.006"/>
+  <testcase name="searchByCompanyName_found" classname="usermanagement.service.MockUserServiceImplTest" time="0.001"/>
+  <testcase name="findById_found" classname="usermanagement.service.MockUserServiceImplTest" time="0.001"/>
+</testsuite>

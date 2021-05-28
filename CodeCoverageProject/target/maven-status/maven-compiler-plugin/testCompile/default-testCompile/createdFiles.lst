@@ -1,0 +1,4 @@
+usermanagement\repository\PersonRepositoryTest.class
+usermanagement\service\MockUserServiceImplTest.class
+usermanagement\entity\PersonTest.class
+usermanagement\service\TransformServiceTest.class
