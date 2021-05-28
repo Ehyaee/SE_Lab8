@@ -1,8 +1,6 @@
 package usermanagement.service;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.doThrow;
@@ -91,6 +89,16 @@ public class MockUserServiceImplTest {
 
 		verify(personDao, times(1)).delete(Integer.valueOf(1));
 		;
+	}
+
+	@Test
+	public void same_person(){
+		User user2 = new User();
+		assertTrue(user.equals(user2));
+
+		user2.setUserId(110);
+		assertFalse(user.equals(user2));
+
 	}
 
 	@Before
